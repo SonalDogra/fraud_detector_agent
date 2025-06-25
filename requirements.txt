@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+langchain
+sentence-transformers
+qdrant-client
+huggingface_hub
+pydantic

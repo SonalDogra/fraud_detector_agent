@@ -1,0 +1,2 @@
+{"id": "txn_001", "amount": 1200, "location": "NY", "is_fraud": false}
+{"id": "txn_002", "amount": 5500, "location": "LA", "is_fraud": true}
