@@ -1,7 +1,11 @@
 fastapi
 uvicorn
-langchain
-sentence-transformers
-qdrant-client
-huggingface_hub
+requests
 pydantic
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-huggingface
+chromadb
+sentence-transformers
