@@ -17,7 +17,7 @@ import os
 class CustomHFEmbeddings(Embeddings):
     def __init__(self, model_name="sentence-transformers/all-MiniLM-L6-v2"):
         self.embedding = HuggingFaceInferenceAPIEmbeddings(
-            api_key=os.getenv("Bearer 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"),
+            api_key=os.getenv("HUGGINGFACE_API_KEY"),
             model_name=model_name
         )
 

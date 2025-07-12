@@ -8,7 +8,7 @@ from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
 from custom_embeddings import CustomHFEmbeddings
 from agent.agent_executor import agent_executor
-
+import os
 load_dotenv()
 app = FastAPI()
 
@@ -22,7 +22,10 @@ app.add_middleware(
 )
 
 API_URL = "https://router.huggingface.co/novita/v3/openai/chat/completions"
-HEADERS = {"Authorization": "Bearer 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"}
+
+HF_TOKEN = os.getenv("HUGGINGFACE_API_KEY")
+HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"}
+
 MODEL_NAME = "deepseek/deepseek-v3-0324"
 FRAUD_FILE = "fraud_history.jsonl"
 
