@@ -9,7 +9,7 @@ load_dotenv()
 
 llm = ChatOpenAI(
     openai_api_base="https://router.huggingface.co/novita/v3/openai",
-    openai_api_key="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",
+    openai_api_key="HUGGINGFACE_API_KEY",
     model="deepseek/deepseek-v3-0324"
 )
 
