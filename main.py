@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 API_URL = "https://router.huggingface.co/novita/v3/openai/chat/completions"
-HEADERS = {"Authorization": "Bearer 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"}
+HEADERS = {"Authorization": "Bearer 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"}
 MODEL_NAME = "deepseek/deepseek-v3-0324"
 FRAUD_FILE = "fraud_history.jsonl"
 
