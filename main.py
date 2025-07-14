@@ -90,9 +90,12 @@ async def log_session(request: Request):
     try:
         payload = await request.json()
         sid, data = payload["session_id"], payload["data"]
+        print(f"📥 Logging session: {sid} with data: {data}")
+
         os.makedirs("sessions", exist_ok=True)
         with open(f"sessions/{sid}.jsonl", "a") as f:
             f.write(json.dumps({"data": data}) + "\n")
+
         return {"status": "logged"}
     except Exception as e:
         traceback.print_exc()
